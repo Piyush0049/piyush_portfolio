@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<style>
+    body {
+        font-family: 'Arial, sans-serif';
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+        color: #fff;
+        text-align: center;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+        animation: slideIn 1s ease-in-out;
+    }
+    @keyframes slideIn {
+        from { transform: translateY(-50px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+    .section {
+        margin: 20px 0;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        transform: perspective(500px) rotateX(0deg);
+        transition: transform 0.5s, scale 0.5s;
+    }
+    .section:hover {
+        transform: scale(1.05);
+    }
+    .section h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+        animation: slideInLeft 1s ease-in-out;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+    @keyframes slideInLeft {
+        from { transform: translateX(-50px); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+    }
+    .section p, .section ul {
+        font-size: 1.2em;
+        line-height: 1.5;
+        animation: fadeIn 1.5s ease-in-out;
+    }
+    .section p::before, .section ul::before {
+        content: '';
+        display: block;
+        height: 5px;
+        width: 50px;
+        background: #fff;
+        margin: 0 auto 10px auto;
+        border-radius: 5px;
+        animation: slideInLeft 1.5s ease-in-out;
+    }
+    .section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .section ul li {
+        margin: 10px 0;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Piyush Joshi</h1>
+    
+    <div class="section">
+        <h2>Personal Statement</h2>
+        <p>I'm Piyush Joshi, currently in my second year of pursuing a Bachelor's of Technology degree in Computer Science and Engineering from Netaji Subhas University of Technology, Dwarka, Delhi. I have developed multiple projects using the MERN stack and RESTful API, and have experience with Redux, GitHub, and Tailwind CSS.</p>
+    </div>
+    
+    <div class="section">
+        <h2>Intern Title</h2>
+        <p>Full Stack Web Developer</p>
+    </div>
+    
+    <div class="section">
+        <h2>Experience</h2>
+        <ul>
+            <li><strong>Leadlly.in (2024 - 2024):</strong> During my internship at Leadlly.in, an emerging Indian educational technology startup, I had the privilege to immerse myself in collaborative teamwork, fostering the cultivation of essential skills crucial for professional development. Operating within the dynamic landscape of this burgeoning venture, I not only contributed meaningfully to collective objectives but also gained invaluable insights into effective team dynamics and the intricacies of skill refinement.</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>Education</h2>
+        <p>Bachelor's of Technology degree in Computer Science and Engineering from Netaji Subhas University of Technology, Dwarka, Delhi</p>
+    </div>
+    
+    <div class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React, Next</li>
+            <li>Node.js, Express, MongoDB</li>
+            <li>Git, Responsive Design, VS Code</li>
+            <li>Redux, RESTful APIs</li>
+            <li>Tailwind CSS</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Snap & Shop</strong> A modern e-commerce website built with the MERN stack. Features include user authentication, product search, and a shopping cart.</li>
+            <li><strong>My To-Do App</strong> A professional web application designed to help users manage their notes and to-do lists efficiently. It includes user authentication for secure access, allowing users to create, update, and delete their personal notes and to-do items.</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Coding and experimenting with new technologies</li>
+            <li>Writing songs and composing music</li>
+            <li>Staying updated with industry trends</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>Contact</h2>
+        <p>Email: piyushjoshi81204@gmail.com | Phone: +91 9485793073</p>
+    </div>
+</div>
+
+</body>
+</html>
